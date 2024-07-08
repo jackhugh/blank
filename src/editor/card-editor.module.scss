@@ -1,0 +1,36 @@
+.outerContainer,
+.innerContainer {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  align-items: center;
+}
+
+.container {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 600px;
+  height: auto;
+  align-items: center;
+  align-self: center;
+  width: 100%;
+  gap: 8px;
+}
+
+.canvasContainer {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  width: 100%;
+  min-height: 300px;
+}
+
+.toolbar {
+  margin-top: auto;
+}
+
+.CTA {
+  width: 100%;
+}

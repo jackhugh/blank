@@ -1,0 +1,91 @@
+@use "@/styles/colors";
+@use "@/styles/text";
+
+.title {
+  @include text.paragraph-bold;
+}
+
+.separator {
+  border: 1px solid #efeeef;
+  margin: 10px 0;
+}
+
+.textField {
+  @include text.paragraph;
+  // This font size should be at least 16px since this is what safari
+  // mobile determines is readable without automatically zooming the
+  // page in
+  font-size: 16px;
+
+  width: 100%;
+  min-height: 200px;
+  max-height: 350px;
+  overflow: auto;
+  resize: none;
+  caret-color: colors.$teal;
+  color: #0f3874;
+  font-family: "Montserrat", sans-serif;
+}
+
+.GCTextField {
+  min-height: 350px;
+}
+.textField::placeholder {
+  color: colors.$darkGrey;
+}
+
+.textField:focus {
+  outline: none;
+}
+
+.form {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.containerWithHeight {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.fullHeightContent {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.inputPositioner {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.innerContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-grow: 1;
+}
+
+.buttonsContainer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+}
+
+.inputContainer {
+  width: 100%;
+  padding: 12px;
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+}
+
+.CTA {
+  width: 100%;
+  margin-top: 12px;
+}
