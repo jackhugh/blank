@@ -5,7 +5,7 @@ import React from 'react';
 import { ViewportBuilder } from '../components/viewport-builder/viewport-builder';
 import { useField, useForm } from 'payload/components/forms';
 
-const TemplateViewports = {
+const TemplateViewports: CollectionConfig = {
   slug: 'template-viewports',
   admin: {
     useAsTitle: 'handle',
@@ -117,6 +117,6 @@ const TemplateViewports = {
       ],
     },
   ],
-} as const satisfies CollectionConfig;
+};
 
 export default TemplateViewports;

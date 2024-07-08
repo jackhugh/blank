@@ -3,7 +3,6 @@ import { v4 as uuid } from 'uuid';
 import { Viewport } from '../blocks/Viewport';
 import { Illustrations } from './Illustration';
 import React from 'react';
-import { ThemePreview } from '../components/theme-preview';
 
 const Themes: CollectionConfig = {
   slug: 'themes',

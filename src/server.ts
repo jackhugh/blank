@@ -25,7 +25,7 @@ export const seed = async (payload: Payload): Promise<void> => {
 
   const res = await fetch(
     'https://api.touchnote.io/content/tags',
-    requestOptions
+    requestOptions as any
   );
   const json = await res.json();
 

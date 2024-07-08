@@ -42,7 +42,7 @@ export const ViewportBuilder = ({
       width={width}
       height={height}
       path={path}
-      viewports={overrideViewports ?? viewports}
+      viewports={overrideViewports ?? (viewports as any)}
     />
   );
 };

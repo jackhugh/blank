@@ -13,7 +13,6 @@ import TemplateViewports from './collections/TemplateViewports';
 import Themes from './collections/Themes';
 import Tags from './collections/Tags';
 import Pages from './collections/Page';
-import { ThemeSlider } from './blocks/ThemeSlider';
 import Blocks from './collections/Blocks';
 import { TemplateViewportsThumbnails } from './collections/TemplateViewportsThumbnails';
 import EditorTags from './globals/EditorTags';

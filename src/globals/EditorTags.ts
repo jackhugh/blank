@@ -1,6 +1,6 @@
 import { CollectionConfig, GlobalConfig } from 'payload/types';
 
-const EditorTags = {
+const EditorTags: GlobalConfig = {
   slug: 'editor-tags',
 
   fields: [
@@ -42,6 +42,6 @@ const EditorTags = {
       ],
     },
   ],
-} as const satisfies GlobalConfig;
+};
 
 export default EditorTags;
